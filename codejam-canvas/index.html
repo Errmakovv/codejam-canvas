@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Canvas</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__right-contaier">
+            <img class="header__right-contaier__burger-menu" src="assets/Shape.svg" alt="">
+            <h1 class="header__right-contaier__headline">CodeJam - Pallete</h1>
+        </div>
+        <img class="header__left" src="assets/head-left.svg" alt="">
+    </header>
+    <main class="main">
+        <div class="main__container">
+            <div class="main__tools-and-colors">
+                <ul class="main__tools">
+                    <li class="main__tool">
+                        <img class="main__tool__img" src="assets/paint-bucket.svg" alt="">
+                        <p class="main__tool__name">Paint bucket</p>
+                    </li>
+                    <li class="main__tool">
+                        <img class="main__tool__img" src="assets/choose-color.svg" alt="">
+                        <p class="main__tool__name">Choose color</p>
+                    </li>
+                    <li class="main__tool">
+                        <img class="main__tool__img" src="assets/move.svg" alt="">
+                        <p class="main__tool__name">Move</p>
+                    </li>
+                    <li class="main__tool">
+                        <img class="main__tool__img" src="assets/transform.svg" alt="">
+                        <p class="main__tool__name">Transform</p>
+                    </li>
+                </ul>
+                <ul class="main__colors">
+                    <li class="main__color">
+                        <div class="main__color__circle current-color"></div>
+                        <p class="main__color__name">Current color</p>
+                    </li>
+                    <li class="main__color">
+                        <div class="main__color__circle prev-color"></div>
+                        <p class="main__color__name">Prev color</p>
+                    </li>
+                    <li class="main__color">
+                        <div class="main__color__circle red-color"></div>
+                        <p class="main__color__name">red</p>
+                    </li>
+                    <li class="main__color">
+                        <div class="main__color__circle blue-color"></div>
+                        <p class="main__color__name">blue</p>
+                    </li>
+                </ul>
+            </div>
+            <canvas class="main__canvas" width="512px" height="512px"></canvas>
+            <ul class="main__examples">
+                <li class="main__example e4">
+                    <div class="main__example__square"></div>
+                    <p class="main__example__name">4 &times 4</p>
+                </li>
+                <li class="main__example e32">
+                    <div class="main__example__square"></div>
+                    <p class="main__example__name">32 &times 32</p>
+                </li>
+                <li class="main__example e256">
+                    <div class="main__example__square"></div>
+                    <p class="main__example__name">256 &times 256</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
